@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <div class="logo">Minha Loja</a></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="paginas/login/login.html">Login</a>
+        <a href="paginas/cadastro/register.html">Cadastro</a>
+    </nav>
+</header>
+
+
+    <div class="banner">
+        <img src="imagens/banners/banner.png" alt="Banner">
+    </div>
+
+    <div class="content">
+       <div class="categories">
+    <h3>Categorias</h3>
+    <ul>
+        <li><a href="eletronicos.html">Eletrônicos</a></li>
+        <li><a href="roupas.html">Roupas</a></li>
+        <li><a href="calcados.html">Calçados</a></li>
+        <li><a href="decoracao.html">Decoração</a></li>
+        <li><a href="livros.html">Livros</a></li>
+        <li><a href="esportes.html">Esportes</a></li>
+    </ul>
+</div>
+
+        <div class="products">
+    <div class="product">
+        <img src="imagens/produtos/produto1.avif" alt="Produto 1">
+        <h4>Produto 1</h4>
+        <p>R$ 100,00</p>
+        <a href="paginas/produtos/produto1.html" class="btn-comprar">Comprar</a>
+    </div>
+    <div class="product">
+        <img src="imagens/produtos/produto2.avif" alt="Produto 2">
+        <h4>Produto 2</h4>
+        <p>R$ 200,00</p>
+        <a href="produto2.html" class="btn-comprar">Comprar</a>
+    </div>
+    <div class="product">
+        <img src="imagens/produtos/produto3.avif" alt="Produto 3">
+        <h4>Produto 3</h4>
+        <p>R$ 300,00</p>
+        <a href="produto3.html" class="btn-comprar">Comprar</a>
+    </div>
+    <div class="product">
+        <img src="imagens/produtos/produto4.avif" alt="Produto 4">
+        <h4>Produto 4</h4>
+        <p>R$ 400,00</p>
+        <a href="produto4.html" class="btn-comprar">Comprar</a>
+    </div>
+    <div class="product">
+        <img src="imagens/produtos/produto5.avif" alt="Produto 5">
+        <h4>Produto 5</h4>
+        <p>R$ 500,00</p>
+        <a href="produto5.html" class="btn-comprar">Comprar</a>
+    </div>
+    <div class="product">
+        <img src="imagens/produtos/produto6.avif" alt="Produto 6">
+        <h4>Produto 6</h4>
+        <p>R$ 600,00</p>
+        <a href="produto6.html" class="btn-comprar">Comprar</a>
+    </div>
+</div>
+
+    </div>
+
+    <script>
+        function comprarProduto(produto) {
+            // Redireciona para a página de compra passando o nome do produto na URL
+            window.location.href = `compra.html?produto=${encodeURIComponent(produto)}`;
+        }
+    </script>
+</body>
+</html>

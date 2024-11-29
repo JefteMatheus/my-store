@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.produto-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto-imagens {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+}
+
+.imagem-grande img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.imagens-relacionadas {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.imagens-relacionadas img {
+    width: 23%;  /* Reduzindo a largura das 4 imagens para ficarem menores */
+    height: auto;
+    object-fit: cover;
+}
+
+.produto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produto-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.produto-info p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.produto-info button {
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.produto-info button:hover {
+    background-color: #0056b3;
+}
+
+.produtos-semelhantes {
+    margin-top: 40px;
+}
+
+.produtos-semelhantes h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.produtos-semelhantes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.produto-semelhante {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.produto-semelhante img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.produto-semelhante p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.produto-semelhante button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.produto-semelhante button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
